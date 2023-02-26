@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form name="cal">
+            <input type="text" name="display" id="display" placeholder="0" readonly>
+            <br>
+            <div class="button-box">
+                <input type="button" class="btn" vlaue="7" onclick="cal.display.value +='7'">
+                <input type="button" class="btn" vlaue="8" onclick="cal.display.value +='8'">
+                <input type="button" class="btn" vlaue="9" onclick="cal.display.value +='9'">
+                <input type="button" class="btn" vlaue="+" onclick="cal.display.value +='+'">
+                
+                <br>
+                <input type="button" class="btn" vlaue="4" onclick="cal.display.value +='4'">
+                <input type="button" class="btn" vlaue="5" onclick="cal.display.value +='5'">
+                <input type="button" class="btn" vlaue="6" onclick="cal.display.value +='6'">
+                <input type="button" class="btn mbtn" vlaue="-" onclick="cal.display.value +='-'">
+
+                <br>
+                <input type="button" class="btn" vlaue="1" onclick="cal.display.value +='1'">
+                <input type="button" class="btn" vlaue="2" onclick="cal.display.value +='2'">
+                <input type="button" class="btn" vlaue="3" onclick="cal.display.value +='3'">
+                <input type="button" class="btn mbtn" vlaue="*" onclick="cal.display.value +='*'">
+
+                <br>
+                <input type="button" class="btn cbtn" vlaue="C" onclick="cal.display.value +='C'">
+                <input type="button" class="btn" vlaue="0" onclick="cal.display.value +='0'">
+                <input type="button" class="btn" vlaue="/" onclick="cal.display.value +='/'">
+                <input type="button" class="btn mbtn" vlaue="=" onclick="cal.display.value = eval(cal.display.value)">
+                <br>
+                
+
+
+
+            </div>
+        
+        </form>
+    </div>
+    
+</body>
+</html>
